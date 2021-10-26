@@ -1,0 +1,65 @@
+@import "../../../../scss/variables";
+
+span{
+    position: absolute;
+    margin-left: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    border-right: 1px solid #cbc6cb;
+    padding-right: 7px;
+    opacity: 0.9;
+}
+
+input{
+    padding-left: 40px;
+    height: 45px;
+    outline: none;
+    background-color: #ebe8e8;
+    border-radius: 7px;
+	outline: none;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+
+input.ng-valid{
+    border-color: #28a745;
+}
+
+::placeholder {
+    font-size: 0.8rem;
+    color: #000;
+    opacity: 0.8;
+  }
+
+.card {
+    // border: none;
+    margin-top: 5rem;
+
+    .card-title {
+        font-size: 0.9rem;
+        line-height: 150%;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .card-subtitle {
+        font-size: 0.8rem;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+}
+
+.text-primary {
+    color: #2fbf79 !important;
+}
+
+.btn-primary {
+    color: $white;
+    border-radius: 15px;
+    width: 45%;
+
+}

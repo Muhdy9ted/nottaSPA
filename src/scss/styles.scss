@@ -1,0 +1,48 @@
+@import "../assets/css/spinner.css"; //spinner onload 
+@import "../../node_modules/alertifyjs//build/css/alertify.min.css"; //alertify notification
+@import "../../node_modules/alertifyjs//build/css/themes/bootstrap.min.css"; //alertify notification
+@import "global"; //overwrite bootstrap classes and variables
+@import "variables"; //created custom variables
+@import "~bootstrap/scss/bootstrap"; //bootstrap4
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: $white;
+    color: $text-color;
+    font-family: 'Muli', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+
+ /*------------------------- Test ------------------*/
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    html{
+        font-size: 18px;
+    }
+
+    .badge {
+        background-color: green;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .badge {
+        background-color: blue;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .badge {
+        background-color: black;
+    }
+ }
